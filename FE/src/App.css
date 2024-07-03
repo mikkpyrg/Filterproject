@@ -1,0 +1,65 @@
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  color: black;
+  padding-top: 10px;
+}
+
+button {
+  background-color: #3f51b5;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.dark {
+  background-color: darkgrey;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #d1ffbd;
+  padding: 0 10px;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.w-500 {
+  width: 500px;
+  min-width: 500px;
+}
+
+.col {
+  display: flex;
+  align-items: self-start;
+}
+
+.col > div {
+  margin-bottom: 10px;
+}
+
+.col-left {
+  margin-right: 10px;
+}
+
+.m-d-10 {
+  margin-bottom: 10px;
+}
+
+
+button + button,
+input + button,
+select + input,
+select + select {
+  margin-left: 10px;
+}
+
+.error {
+  color: red;
+}
