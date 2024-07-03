@@ -36,7 +36,7 @@ function CriteriaRowEdit({index, criterion, onEdit, onDelete}) {
       {criterion.type === CriteriaType.Amount && <input type="number" value={criterion.amount} onChange={(e) => setAmount(e.target.value)} placeholder='amount' />}
       {criterion.type === CriteriaType.Title && <input type="text" value={criterion.title} onChange={(e) => setTitle(e.target.value)} placeholder='title' />}
       {criterion.type === CriteriaType.Date && <input type="date" value={parsedDate} onChange={(e) => setDate(e.target.value)} placeholder='date' />}
-      <button className="dark" onClick={() => onDelete(index)}>Delete</button>
+      <button className="dark" onClick={() => onDelete(index)}>-</button>
     </div>
   );
 }

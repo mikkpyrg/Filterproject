@@ -53,7 +53,7 @@ function FilterEdit({filter, onSave, onCancel}) {
             <input type="text" className="m-d-10" value={name} onChange={(e) => setName(e.target.value)} placeholder='filter name' />
             {criteria.map((x, i) => <CriteriaRowEdit key={i} index={i} criterion={x} onEdit={onEdit} onDelete={onDelete}/>)}
             <div>
-              <button onClick={() => addCriteria(filter)}>Add row</button>
+              <button onClick={() => addCriteria(filter)}>+ Add row</button>
             </div>
         </div>
       </div>
